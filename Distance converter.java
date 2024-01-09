@@ -13,7 +13,7 @@ double meters;
 Scanner keyboard = new Scanner(System.in);
 
 // Ask user for meters
-System.out.print("Enter a distance in meters, e.g 100: ");
+System.out.println("Enter a distance in meters, e.g 100: ");
 meters = keyboard.nextDouble();
 
 // Check for input greater than zero
@@ -25,7 +25,7 @@ meters = keyboard.nextDouble();
 }
 
 // Menu options
-System.out.print("\nEnter 1-4 from the menu options: ");
+System.out.println("\nEnter 1-4 from the menu options: ");
 System.out.println("\n1. Convert to kilometers\n2. Convert to inches\n" +
 ";3. Convert to feet\n4. End");
 num = keyboard.nextInt();
