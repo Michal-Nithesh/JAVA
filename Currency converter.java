@@ -34,7 +34,7 @@ public class currency
     System.out.println("Please choose the output currency");
     int output = in.nextInt();
 
-    System.out.printf("Now enter the input in " + inType);
+    System.out.println("Now enter the input in " + inType);
     double input = in.nextDouble();
 
     if (choice == output)
@@ -44,77 +44,77 @@ public class currency
     {
     double dollar_euro_rate = 83;
     rate = input * dollar_euro_rate;
-      System.out.printf( "%s" + input + " at a conversion rate of " + dollar_euro_rate + "
+      System.out.println( "%s" + input + " at a conversion rate of " + dollar_euro_rate + "
     Dollars to %s = %.2f\n", (char)us_dollar_sym, euro, rate);
     }
     else if (choice == 1 && output == 3){
     double dollar_rupee_rate = 66.82;
     rate = input * dollar_rupee_rate;
-    System.out.printf( "%s" + input + " at a conversion rate of " + dollar_rupee_rate + "
+    System.out.println( "%s" + input + " at a conversion rate of " + dollar_rupee_rate + "
     Dollars to %s= %.2f\n", (char)us_dollar_sym, rupee, rate);
 
     }
     else if (choice == 1 && output == 4){
     double dollar_yen_rate = 109.12;
     rate = input * dollar_yen_rate;
-    System.out.printf( "%s" + input + " at a conversion rate of " + dollar_yen_rate + " Dollars
+    System.out.println( "%s" + input + " at a conversion rate of " + dollar_yen_rate + " Dollars
     to %s = %.2f\n, (char)us_dollar_sym, yen, rate);
     }
     if (choice == 2 && output == 1)
     {
     double euro_dollar_rate = 1.20;
     rate = input * euro_dollar_rate;
-    System.out.printf( "%s" + input + " at a conversion rate of " + euro_dollar_rate + " Euros
+    System.out.println( "%s" + input + " at a conversion rate of " + euro_dollar_rate + " Euros
     to %s = %.2f\n", (char)euro_sym, us_dollar, rate);
     }    
     else if (choice == 2 && output == 3)
     {
     double euro_rupee_rate = 80.03;
     rate = input * euro_rupee_rate;
-    System.out.printf( "%s" + input + " at a conversion rate of " + euro_rupee_rate + " Euros
+    System.out.println( "%s" + input + " at a conversion rate of " + euro_rupee_rate + " Euros
     to %s = %.2f\n", (char)euro_sym, rupee, rate);
     }  
     else if (choice == 2 && output == 4)
     {
     double euro_yen_rate = 130.69;
     rate = input * euro_yen_rate;
-    System.out.printf( "%s" + input + " at a conversion rate of " + euro_yen_rate + " Euros to
+    System.out.println( "%s" + input + " at a conversion rate of " + euro_yen_rate + " Euros to
     %s = %.2f\n", (char)euro_sym, yen, rate);
     }
     if (choice == 3 && output == 1)
     {  
     double rupee_dollar_rate = 0.015;
-    System.out.printf( "%s" + input + " at a conversion rate of " + rupee_dollar_rate + "
+    System.out.println( "%s" + input + " at a conversion rate of " + rupee_dollar_rate + "
     Pounds to %s= %.2f\n", (char)rupee_sym, us_dollar, rate);
     }
     else if (choice == 3 && output == 2)
     {
     double rupee_euro_rate = 0.012;
-    System.out.printf( "%s" + input + " at a conversion rate of &quot; + rupee_euro_rate + " Pounds
+    System.out.println( "%s" + input + " at a conversion rate of &quot; + rupee_euro_rate + " Pounds
     to %s = %.2f\n", (char)rupee_sym, euro, rate);
     }
     else if (choice == 3 && output == 4)
     {
     double rupee_yen_rate = 1.641;
-    System.out.printf( "%s" + input + " at a conversion rate of " + rupee_yen_rate + " Pounds
+    System.out.println( "%s" + input + " at a conversion rate of " + rupee_yen_rate + " Pounds
     to %s = %.2f\n", (char)rupee_sym, yen, rate);
     }
     if (choice == 4 && output == 1)
     {
     double yen_dollar_rate = 0.0092;
-    System.out.printf( "%s"; + input + " at a conversion rate of " + yen_dollar_rate + " Yen to
+    System.out.println( "%s"; + input + " at a conversion rate of " + yen_dollar_rate + " Yen to
     %s = %.2f\n", (char)yen_sym, us_dollar, rate);
     }
     else if (choice == 4 && output == 2)
     {
     double yen_euro_rate = 0.0077;
-    System.out.printf( "%s" + input + " at a conversion rate of " + yen_euro_rate + " Yen to
+    System.out.println( "%s" + input + " at a conversion rate of " + yen_euro_rate + " Yen to
     %s = %.2f\n", (char)yen_sym, euro, rate);
     }
     else if (choice == 4 && output == 3)
     {
     double yen_rupee_rate = 0.61;
-    System.out.printf( "%s" + input + " at a conversion rate of " + yen_rupee_rate + " Yen to
+    System.out.println( "%s" + input + " at a conversion rate of " + yen_rupee_rate + " Yen to
     %s = %.2f\n", (char)yen_sym, rupee, rate);
     }
       System.out.println("Thank you for using the currency converter");
