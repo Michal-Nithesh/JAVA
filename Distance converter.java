@@ -13,27 +13,27 @@ double meters;
 Scanner keyboard = new Scanner(System.in);
 
 // Ask user for meters
-System.out.print(&quot;Enter a distance in meters, e.g 100: &quot;);
+System.out.print("Enter a distance in meters, e.g 100: ");
 meters = keyboard.nextDouble();
 
 // Check for input greater than zero
-while(meters &lt;=0)
+while(meters <=0)
 {
-String error = &quot;Please enter a num greater than zero&quot;;
+String error = "Please enter a num greater than zero";
 System.out.println(error);
 meters = keyboard.nextDouble();
 }
 
 // Menu options
-System.out.print(&quot;\nEnter 1-4 from the menu options: &quot;);
-System.out.println(&quot;\n1. Convert to kilometers\n2. Convert to inches\n&quot; +
-&quot;3. Convert to feet\n4. End&quot;);
+System.out.print("\nEnter 1-4 from the menu options: ");
+System.out.println("\n1. Convert to kilometers\n2. Convert to inches\n" +
+";3. Convert to feet\n4. End");
 num = keyboard.nextInt();
 
 // num entered by the user
-while(num &lt;=0 || num&gt;=5)
+while(num <= 0 || num >= 5)
 {
-String invalid = &quot;Invalid option entered. Please use 1 through 4&quot;;
+String invalid = "Invalid option entered. Please use 1 through 4";
 System.out.println(invalid);
 meters = keyboard.nextDouble();
 }
@@ -43,7 +43,6 @@ switch (num)
 
 case 1:
 dpKilometers(meters);
-
 break;
 
 case 2:
@@ -53,7 +52,8 @@ break;
 case 3:
 dpFeet(meters);
 break;
-case 4:
+
+  case 4:
 System.exit(0);
 }
 }
@@ -61,19 +61,19 @@ public static void dpKilometers(double meters)
 {
 double km;
 km = meters * .001;
-System.out.println(+ meters + &quot; meters equals to &quot; +km+ &quot; kilometers&quot;);
+System.out.println(+ meters + " meters equals to " +km+ " kilometers");
 }
 public static void dpInches(double meters)
 {
 double in;
 in = meters * 39.37;
-System.out.println(meters + &quot; meters equals to &quot; + in + &quot; inches.&quot;);
+System.out.println(meters + " meters equals to " + in + " inches.");
 }
 public static void dpFeet(double meters)
 {
 double ft;
 ft = meters * 3.281;
-System.out.println(meters + &quot; meters equals to &quot; + ft + &quot; feet.&quot;);
+System.out.println(meters + " meters equals to " + ft + " feet.");
 
 }
 }
